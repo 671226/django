@@ -1,0 +1,99 @@
+class Student : 
+    def __init__(self , name, student_id, course, faculty, speciality, p_is_mestnyi = False,p_subjects = [],p_semester = 1):
+        self.p_name = name 
+        self.p_id = student_id 
+        self.p_cours = course  
+        self.p_speciality = speciality
+        self.p_faculty = faculty 
+        self.p_is_mestnyi = p_is_mestnyi
+        self.p_subjects = p_subjects
+        self.p_semester = p_semester 
+
+    def all_info(self ):
+        print(self.p_name, self.p_id, self.p_cours,self.p_speciality,self.p_faculty,self.p_is_mestnyi,self.p_subjects,self.p_semester)
+    
+    def get_full_name(self, ):
+        print(self.p_name)
+        
+
+    def add_subject(self,subject):
+        subject = self.p_subjects.append(["owo"])
+        return subject
+
+    def semester_change(self):
+        self.p_semester += 1
+        self.p_subjects.clear()
+    
+a = Student('Gena Na', 53452523 , 2 , False, 'it',[], 'b.c.')
+b = Student('Hanna owo' ,76845673, 3 , False,'ts',[], 'd.g' )
+c = Student('jony Ibragim', 347593864, 4 ,False, 'sd',[], 'f.l')
+
+a.all_info()
+b.get_full_name()
+print(c.semester_change)
+
+class Student : 
+    def __init__(self , name, student_id, course, faculty, speciality, p_is_mestnyi = False,p_subjects = [],p_semester = 1):
+        self.p_name = name 
+        self.p_id = student_id 
+        self.p_cours = course  
+        self.p_speciality = speciality
+        self.p_faculty = faculty 
+        self.p_is_mestnyi = p_is_mestnyi
+        self.p_subjects = p_subjects
+        self.p_semester = p_semester 
+
+    def all_info(self ):
+        print(self.p_name, self.p_id, self.p_cours,self.p_speciality,self.p_faculty,self.p_is_mestnyi,self.p_subjects,self.p_semester)
+    
+    def get_full_name(self, ):
+        print(self.p_name)
+        
+
+    def add_subject(self,subject):
+        subject = self.p_subjects.append(["owo"])
+        return subject
+
+    def semester_change(self):
+        self.p_semester += 1
+        self.p_subjects.clear()
+    
+a = Student('Gena Na', 53452523 , 2 , False, 'it',[], 'b.c.')
+b = Student('Hanna owo' ,76845673, 3 , False,'ts',[], 'd.g' )
+c = Student('jony Ibragim', 347593864, 4 ,False, 'sd',[], 'f.l')
+
+a.all_info()
+b.get_full_name()
+print(c.semester_change)
+
+class Faculty:
+    def __init__(self, name, dean, students=[]):
+        self.faculty_name = name
+        self.dean = dean
+        self.students = students
+    
+
+    def add_student(self, student):
+
+        student = self.students.append(Student)
+        return student
+
+        
+print('name, surname ID student (ID): ')
+s1 = Student(input(), input(), int(input()), 1, 'f.g.', 'g.g.', True, ['Georaphy'], 2)
+print(' name, surname ID student (ID): ')
+s2 = Student(input(), input(), int(input()), 1, 'f.g.', 'g.g.', True, ['Georaphy'], 2)
+print('name, surname ID student (ID): ')
+s3 = Student(input(), input(), int(input()), 1, 'h.h.', 'j.t.', True, ['Georaphy'], 2)
+print('name, surname ID student (ID): ')
+s4 = Student(input(), input(), int(input()), 1, 'h.h.', 'j.t.', True, ['Georaphy'], 2)
+print('name, surname ID student (ID): ')
+s5 = Student(input(), input(), int(input()), 1, 'IT', 'SE', True, ['Georaphy'], 2)
+    
+f = Faculty()
+print(f'faculty: {f.faculty_name} | ', f'Dean: {f.dean}\n')
+print('students:')
+f.add_student([s1.get_full_name(), s2.get_full_name()])
+print('')
+    
+
