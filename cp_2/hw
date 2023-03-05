@@ -1,1 +1,9 @@
-
+I want to create an online store where the user can buy various stationery
+Essences: User, Admin, Category, Product, Purchase
+User Stories:
+As a user, I want to select products by category
+As a user, I can search for a product by name or description
+As a user, I can register
+As a user, I can...
+As an admin, I can add a category
+As an admin, I can delete a product
